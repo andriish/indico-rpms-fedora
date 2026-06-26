@@ -98,6 +98,7 @@ RUN    dnf -y install            \
   python3-pytz    \
   python3-pyyaml    && yum -y clean all
 #  python3-pyrsistent        
+#  python3-sqlalchemy1.4  
 RUN    dnf -y install            \
   python3-qrcode-core    \
   python3-redis    \
@@ -111,7 +112,6 @@ RUN    dnf -y install            \
 RUN    dnf -y install            \
   python3-six    \
   python3-speaklater    \
-  python3-sqlalchemy1.4    \
   python3-stack-data    \
   python3-terminaltables    && yum -y clean all  
 RUN    dnf -y install            \
