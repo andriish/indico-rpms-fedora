@@ -97,7 +97,8 @@ RUN    dnf -y install            \
   python3-PyPDF2    \
   python3-pyrsistent    \
   python3-pytz    \
-  python3-pyyaml    \
+  python3-pyyaml    && yum -y clean all  
+RUN    dnf -y install            \
   python3-qrcode-core    \
   python3-redis    \
   python3-reportlab    \
@@ -106,7 +107,8 @@ RUN    dnf -y install            \
   python3-semver    \
   python3-sentry-sdk    \
   python3-setuptools    \
-  python3-simplejson    \
+  python3-simplejson   && yum -y clean all  
+RUN    dnf -y install            \
   python3-six    \
   python3-speaklater    \
   python3-sqlalchemy1.4    \
