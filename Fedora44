@@ -89,7 +89,8 @@ RUN    dnf -y install            \
   python3-psycopg2    \
   python3-ptyprocess    \
   python3-pure-eval    \
-  python3-pycountry    \
+  python3-pycountry    && yum -y clean all  
+RUN    dnf -y install            \
   python3-pycparser    \
   python3-pygments    \
   python3-pyparsing    \
@@ -110,7 +111,8 @@ RUN    dnf -y install            \
   python3-speaklater    \
   python3-sqlalchemy1.4    \
   python3-stack-data    \
-  python3-terminaltables    \
+  python3-terminaltables    && yum -y clean all  
+RUN    dnf -y install            \
   python3-traitlets    \
   python3-translitcodec    \
   python3-typing-extensions    \
