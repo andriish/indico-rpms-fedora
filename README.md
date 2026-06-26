@@ -31,10 +31,6 @@ Therefore, one needs an internet connection to execute them successfully.
 The `srpmsbuild.sh` script also executes the RPM/p/v/do.sh script, if such a script is present.
 Typically such a script is handy for creation of patches.
 
-The `debbuild.sh` script also executes the DEB/p/v/get.sh script, if such a script is present.
-Typically such a script is handy for downloads and repackaging of sources.
-
-
 ## Security
 The `srpmsbuild.sh` script  checks the MD5 sum of the downloaded sources. The allowed checksums are stored in 
 RPM/md5sums.txt If the md5sum in not found in that file, the build will not start.
@@ -47,30 +43,4 @@ All RPM packages have implemented dependencies.
 The repository contains two packages which are quite technical.
 - `indico-devel` -- a package w/o sources, but includes almost all dependencies needed to buils/install Indico.
 This package is a dependency of the main package `python-indico`.
-
-- `indico-mpp` -- a package that include configuration of Indico specific for MPP.
-Depends on  `python-indico`.
-
-The dependencies of the DEB packages is WIP.
-
-
-## YUM/APT repositories.
-
-With the supplies SRC RPM and DEB packages it is possible to create APT or YUM 
-repository either locally or on any well-known platform.
-
-The RPM packages are present in the COPR in the `https://copr.fedorainfracloud.org/coprs/averbyts/I330` YUM repository.
-Practically this means that on Fedora39 the commands 
-
-```
-dnf -y install dnf-plu*
-dnf -y copr enable averbyts/I330
-yum -y install python3-indico 
-yum -y install python3-indico-mpp-configuration 
-
-```
-
-will install a fully functional Indico instance.
-
-The COPR repository can be re-created using the script RPM/submit.sh. The `copr-cli` utility and COPR account is required.
 

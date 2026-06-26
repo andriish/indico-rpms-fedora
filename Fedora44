@@ -62,7 +62,8 @@ RUN  dnf -y install    \
   python3-icalendar    \
   python3-idna    \
   python3-importlib-metadata    \
-  python3-ipython    \
+  python3-ipython     && yum -y clean all  
+RUN    dnf -y install            \
   python3-itsdangerous    \
   python3-jedi    \
   python3-jinja2    \
@@ -126,7 +127,8 @@ RUN  dnf -y install    \
   python3-zipp    \
   python-certbot-apache    \
   python-srpm-macros    \
-  python-tinycss2    \
+  python-tinycss2    && yum -y clean all  
+RUN    dnf -y install            \
   redis    \
   rpm-build    \
   'tex(adjustbox.sty)'    \
