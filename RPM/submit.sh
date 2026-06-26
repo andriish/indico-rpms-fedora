@@ -1,7 +1,7 @@
 #!bin/bash
 
 export PATH=$PATH:$(pwd)
-copr-cli create --enable-net=on --chroot fedora-44-x86_64 --chroot fedora-rawhide-x86_64 I3313
+copr-cli create --enable-net=on --chroot fedora-44-x86_64 --chroot fedora-rawhide-x86_64 indico-fedora
 declare -a BUILDLIST=(
 python-wallet-py3k:0.0.4
 python-limits:5.8.0
