@@ -95,9 +95,9 @@ RUN    dnf -y install            \
   python3-pygments    \
   python3-pyparsing    \
   python3-PyPDF2    \
-#  python3-pyrsistent    \
   python3-pytz    \
-  python3-pyyaml    && yum -y clean all  
+  python3-pyyaml    && yum -y clean all
+#  python3-pyrsistent        
 RUN    dnf -y install            \
   python3-qrcode-core    \
   python3-redis    \
