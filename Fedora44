@@ -95,7 +95,7 @@ RUN    dnf -y install            \
   python3-pygments    \
   python3-pyparsing    \
   python3-PyPDF2    \
-  python3-pyrsistent    \
+#  python3-pyrsistent    \
   python3-pytz    \
   python3-pyyaml    && yum -y clean all  
 RUN    dnf -y install            \
